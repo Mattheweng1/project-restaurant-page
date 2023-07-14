@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+#page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+#header {
+    display: grid;
+    position: sticky;
+    top: -2.8rem;
+    z-index: 1000;
+}
+
+#socialHeader {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: red;
+    height: 3rem;
+    color: white;
+    font-weight: bold;
+}
+
+#enableGeodude {
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+}
+
+#mainHeader {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+}
+
+#siteTitle {
+    font-size: 3rem;
+    padding: 1rem;
+    padding-right: 3rem;
+    color: red;
+}
+
+.tab {
+    display: grid;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.tab:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.2s;
+}
+
+.tab:after {
+    content: '';
+    position: absolute;
+    width: 25%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 25%;
+    background-color: red;
+    transition: transform 0.4s;
+}
+
+.tab:hover:after {
+    transform: scaleX(1);
+    transition: transform 0.4s;
+}
+
+#body {
+    display: grid;
+    background: white;
+}
+
+#hero {
+    background: url('./images/sushi-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+
+#heroBox {
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 5rem;
+    border: solid white 2px;
+    padding: 1.5rem;
+    width: 33rem;
+}
+
+#heroText {
+    display: grid;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 0.75rem;
+    font-size: 1.1rem;
+}
+
+#heroHeading {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+#heroSubheading {
+    font-weight: bold;
+}
+
+#heroFinePrint {
+    font-size: 80%;
+}
+
+#heroBtns {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+    justify-items: start;
+}
+
+#heroBtns>div {
+    background-color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem 0.75rem;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+#heroBtns>div:hover {
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+
+#heroBtnTwo {
+    display: none;
+}
+
+#mainContent {
+    background-color: white;
+}
+
+#reservationForm {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto;
+    height: 5rem;
+}
+
+select {
+    text-align: center;
+    appearance: none;
+    background-color: white;
+    border: solid gray 1px;
+    border-collapse: collapse;
+    z-index: 10;
+    padding: 0 2rem;
+}
+
+select:focus-visible {
+    outline: none;
+    outline: solid gray 1px;
+}
+
+#reserveBtn {
+    appearance: none;
+    border: none;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 0 3rem;
+}
+
+#reserveBtn:hover {
+    cursor: pointer;
+}
+
+#content1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 50vh);
+    padding: 10px;
+    gap: 10px;
+}
+
+#content1>.left1,
+#content1>.right2 {
+    padding: 0 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: auto;
+    align-content: center;
+    justify-items: start;
+}
+
+#content1 .heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#content1 .heading>span {
+    color: red;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem 0.75rem;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: darkred;
+    transition: 0.2s;
+}
+
+#content1>.right1 {
+    background: url('./images/meat-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#content1>.left2 {
+    display: grid;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(2, 30%);
+    align-content: center;
+    justify-content: center;
+    row-gap: 5%;
+    column-gap: 8px;
+    background-color: red;
+}
+
+#content1>.left2>.image {
+    background: url('./images/meat-image.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+#content1>.left2>.image:nth-child(1) {
+    background: url('./images/ramen-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#content1>.left2>.image:nth-child(2) {
+    background: url('./images/soba-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#content1>.left2>.image:nth-child(3) {
+    background: url('./images/udon-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#content1>.left2>.image:nth-child(4) {
+    background: url('./images/mini-ramen-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#content1>.left2>.image:nth-child(5) {
+    background: url('./images/tiny-ramen-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#content1>.left2>.image:nth-child(6) {
+    background: url('./images/noodles-image.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#footer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: red;
+    border-top: solid white 4px;
+    border-bottom: solid white 4px;
+    color: white;
+    font-weight: bold;
+}
+
+#returnToTop {
+    padding: 0.5rem;
+}
