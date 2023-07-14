@@ -2,13 +2,13 @@ console.log('This build is workinggggggg!');
 
 import './style.css';
 
-import preLoad from './pre-load';
-import homeLoad from './home-page.js';
-import menuLoad from './menu-page.js';
+import preLoadPage from './preLoadPage';
+import loadHomePage from './loadHomePage.js';
+import loadMenuPage from './loadMenuPage.js';
 
 (() => {
-    preLoad();
-    homeLoad();
+    preLoadPage();
+    loadHomePage();
 
     const homeTab = document.getElementById('homeTab');
     const menuTab = document.getElementById('menuTab');
@@ -27,15 +27,15 @@ import menuLoad from './menu-page.js';
 
     homeTab.addEventListener('click', () => {
         deleteChildren(body);
-        homeLoad();
+        loadHomePage();
     });
     menuTab.addEventListener('click', () => {
         deleteChildren(body);
-        menuLoad();
+        loadMenuPage();
     });
     contactTab.addEventListener('click', () => {
         deleteChildren(body);
-        contactLoad();
+        loadContactPage();
     });
 
     
