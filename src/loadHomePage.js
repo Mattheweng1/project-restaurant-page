@@ -1,76 +1,76 @@
-export default function homeLoad() {
+export default function loadHomePage() {
     const body = document.getElementById('body');
 
     // Inside page/body
 
-    const hero = document.createElement('div');
-    hero.setAttribute('id', 'hero');
+    const homeHero = document.createElement('div');
+    homeHero.setAttribute('id', 'homeHero');
 
-    const mainContent = document.createElement('div');
-    mainContent.setAttribute('id', 'mainContent');
+    const homeContent = document.createElement('div');
+    homeContent.setAttribute('id', 'homeContent');
     
-    body.appendChild(hero);
-    body.appendChild(mainContent);
+    body.appendChild(homeHero);
+    body.appendChild(homeContent);
 
-    // Inside page/body/hero
+    // Inside page/body/homeHero
 
-    const heroBox = document.createElement('div');
-    heroBox.setAttribute('id', 'heroBox');
+    const homeHeroBox = document.createElement('div');
+    homeHeroBox.setAttribute('id', 'homeHeroBox');
 
-    hero.appendChild(heroBox);
+    homeHero.appendChild(homeHeroBox);
 
-    // Inside page/body/hero/heroBox
+    // Inside page/body/homeHero/homeHeroBox
 
-    const heroText = document.createElement('div');
-    heroText.setAttribute('id', 'heroText');
+    const homeHeroText = document.createElement('div');
+    homeHeroText.setAttribute('id', 'homeHeroText');
 
-    heroBox.appendChild(heroText);
+    homeHeroBox.appendChild(homeHeroText);
 
-    // Inside page/body/hero/heroBox/heroText
+    // Inside page/body/homeHero/homeHeroBox/homeHeroText
 
-    const heroHeading = document.createElement('div');
-    heroHeading.setAttribute('id', 'heroHeading');
-    heroHeading.textContent = 'Sushi for 2 and a half people starting at $42!';
+    const homeHeroHeading = document.createElement('div');
+    homeHeroHeading.setAttribute('id', 'homeHeroHeading');
+    homeHeroHeading.textContent = 'Sushi for 2 and a half people starting at $42!';
 
-    const heroSubheading = document.createElement('div');
-    heroSubheading.setAttribute('id', 'heroSubheading');
-    heroSubheading.textContent = `Enjoy some bangin' sushi at home!`;
+    const homeHeroSubheading = document.createElement('div');
+    homeHeroSubheading.setAttribute('id', 'homeHeroSubheading');
+    homeHeroSubheading.textContent = `Enjoy some bangin' sushi at home!`;
 
-    const heroParagraphOne = document.createElement('div');
-    heroParagraphOne.setAttribute('id', 'heroParagraphOne');
-    heroParagraphOne.textContent = 'Customize your sushi gourging session with countless choices of assorted rolls.';
+    const homeHeroParagraphOne = document.createElement('div');
+    homeHeroParagraphOne.setAttribute('id', 'homeHeroParagraphOne');
+    homeHeroParagraphOne.textContent = 'Customize your sushi gourging session with countless choices of assorted rolls.';
 
-    const heroParagraphTwo = document.createElement('div');
-    heroParagraphTwo.setAttribute('id', 'heroParagraphTwo');
-    heroParagraphTwo.textContent = `*Don't forget to give your half-serving to your third wheel.`;
+    const homeHeroParagraphTwo = document.createElement('div');
+    homeHeroParagraphTwo.setAttribute('id', 'homeHeroParagraphTwo');
+    homeHeroParagraphTwo.textContent = `*Don't forget to give your half-serving to your third wheel.`;
 
-    const heroFinePrint = document.createElement('div');
-    heroFinePrint.setAttribute('id', 'heroFinePrint');
-    heroFinePrint.textContent = `Available for take-out, delivery, or curbside pick-up.`;
+    const homeHeroFinePrint = document.createElement('div');
+    homeHeroFinePrint.setAttribute('id', 'homeHeroFinePrint');
+    homeHeroFinePrint.textContent = `Available for take-out, delivery, or curbside pick-up.`;
 
-    const heroBtns = document.createElement('div');
-    heroBtns.setAttribute('id', 'heroBtns');
+    const homeHeroBtns = document.createElement('div');
+    homeHeroBtns.setAttribute('id', 'homeHeroBtns');
     
-    heroText.appendChild(heroHeading);
-    heroText.appendChild(heroSubheading);
-    heroText.appendChild(heroParagraphOne);
-    heroText.appendChild(heroParagraphTwo);
-    heroText.appendChild(heroFinePrint);
-    heroText.appendChild(heroBtns);
+    homeHeroText.appendChild(homeHeroHeading);
+    homeHeroText.appendChild(homeHeroSubheading);
+    homeHeroText.appendChild(homeHeroParagraphOne);
+    homeHeroText.appendChild(homeHeroParagraphTwo);
+    homeHeroText.appendChild(homeHeroFinePrint);
+    homeHeroText.appendChild(homeHeroBtns);
 
-    // Inside page/body/hero/heroBox/heroText/heroBtns
+    // Inside page/body/homeHero/homeHeroBox/homeHeroText/homeHeroBtns
 
-    const heroBtnOne = document.createElement('div');
-    heroBtnOne.setAttribute('id', 'heroBtnOne');
-    heroBtnOne.textContent = 'Order Online';
+    const homeHeroBtnOne = document.createElement('div');
+    homeHeroBtnOne.setAttribute('id', 'homeHeroBtnOne');
+    homeHeroBtnOne.textContent = 'Order Online';
 
-    const heroBtnTwo = document.createElement('div');
-    heroBtnTwo.setAttribute('id', 'heroBtnTwo');
+    const homeHeroBtnTwo = document.createElement('div');
+    homeHeroBtnTwo.setAttribute('id', 'homeHeroBtnTwo');
     
-    heroBtns.appendChild(heroBtnOne);
-    heroBtns.appendChild(heroBtnTwo);
+    homeHeroBtns.appendChild(homeHeroBtnOne);
+    homeHeroBtns.appendChild(homeHeroBtnTwo);
 
-    // Inside page/body/mainContent
+    // Inside page/body/homeContent
 
     const reservationForm = document.createElement('form');
     reservationForm. setAttribute('id', 'reservationForm');
@@ -81,11 +81,11 @@ export default function homeLoad() {
     const content2 = document.createElement('div');
     content2.setAttribute('id', 'content2');
     
-    mainContent.appendChild(reservationForm);
-    mainContent.appendChild(content1);
-    mainContent.appendChild(content2);
+    homeContent.appendChild(reservationForm);
+    homeContent.appendChild(content1);
+    homeContent.appendChild(content2);
 
-    // Inside page/body/mainContent/reservationForm
+    // Inside page/body/homeContent/reservationForm
 
     const selectRestaurant = document.createElement('select');
     selectRestaurant. setAttribute('id', 'selectRestaurant');
@@ -209,7 +209,7 @@ export default function homeLoad() {
     reservationForm.appendChild(selectTime);
     reservationForm.appendChild(reserveBtn);
 
-    // Inside page/body/mainContent/content1
+    // Inside page/body/homeContent/content1
 
     const C1_left1 = document.createElement('div');
     C1_left1.classList.add('left1');
@@ -228,7 +228,7 @@ export default function homeLoad() {
     content1.appendChild(C1_left2);
     content1.appendChild(C1_right2);
 
-    // Inside page/body/mainContent/content1/.left1
+    // Inside page/body/homeContent/content1/.left1
 
     const C1L1_heading = document.createElement('div');
     C1L1_heading.classList.add('heading');
@@ -246,7 +246,7 @@ export default function homeLoad() {
     C1_left1.appendChild(C1L1_paragraph);
     C1_left1.appendChild(C1L1_btn);
 
-    // Inside page/body/mainContent/content1/.left2
+    // Inside page/body/homeContent/content1/.left2
 
     const C1L2_image1 = document.createElement('div');
     C1L2_image1.classList.add('image');
@@ -273,7 +273,7 @@ export default function homeLoad() {
     C1_left2.appendChild(C1L2_image5);
     C1_left2.appendChild(C1L2_image6);
 
-    // Inside page/body/mainContent/content1/.right2
+    // Inside page/body/homeContent/content1/.right2
 
     const C1R2_heading = document.createElement('div');
     C1R2_heading.classList.add('heading');
@@ -291,7 +291,7 @@ export default function homeLoad() {
     C1_right2.appendChild(C1R2_paragraph);
     C1_right2.appendChild(C1R2_btn);
 
-    // Inside page/body/mainContent/content2
+    // Inside page/body/homeContent/content2
 
     /* // Inside page/footer
 

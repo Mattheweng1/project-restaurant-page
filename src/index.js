@@ -2,7 +2,7 @@ console.log('This build is workinggggggg!');
 
 import './style.css';
 
-import preLoadPage from './preLoadPage';
+import preLoadPage from './preLoadPage.js';
 import loadHomePage from './loadHomePage.js';
 import loadMenuPage from './loadMenuPage.js';
 

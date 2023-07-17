@@ -95,7 +95,24 @@
     background: white;
 }
 
-#hero {
+#footer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: red;
+    border-top: solid white 4px;
+    border-bottom: solid white 4px;
+    color: white;
+    font-weight: bold;
+}
+
+#returnToTop {
+    padding: 0.5rem;
+}
+
+/* For loadHomePage.js */
+
+#homeHero {
     background: url('./images/sushi-image.jpg');
     background-size: cover;
     background-position: center;
@@ -104,7 +121,7 @@
     position: relative;
 }
 
-#heroBox {
+#homeHeroBox {
     display: grid;
     position: absolute;
     top: 50%;
@@ -114,7 +131,7 @@
     width: 33rem;
 }
 
-#heroText {
+#homeHeroText {
     display: grid;
     gap: 1rem;
     background-color: rgba(0, 0, 0, 0.75);
@@ -122,27 +139,27 @@
     font-size: 1.1rem;
 }
 
-#heroHeading {
+#homeHeroHeading {
     font-size: 200%;
     font-weight: bold;
 }
 
-#heroSubheading {
+#homeHeroSubheading {
     font-weight: bold;
 }
 
-#heroFinePrint {
+#homeHeroFinePrint {
     font-size: 80%;
 }
 
-#heroBtns {
+#homeHeroBtns {
     display: grid;
     grid-template-columns: auto auto;
     gap: 0.5rem;
     justify-items: start;
 }
 
-#heroBtns>div {
+#homeHeroBtns>div {
     background-color: red;
     font-size: 1.5rem;
     font-weight: bold;
@@ -151,13 +168,13 @@
     transition: 0.2s;
 }
 
-#heroBtns>div:hover {
+#homeHeroBtns>div:hover {
     background-color: white;
     color: black;
     transition: 0.2s;
 }
 
-#heroBtnTwo {
+#homeHeroBtnTwo {
     display: none;
 }
 
@@ -305,17 +322,14 @@ select:focus-visible {
     background-position: center;
 }
 
-#footer {
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    background: red;
-    border-top: solid white 4px;
-    border-bottom: solid white 4px;
-    color: white;
-    font-weight: bold;
+/* For loadMenuPage.js */
+
+#menuHero {
+    background: url('./images/meat-image.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-#returnToTop {
-    padding: 0.5rem;
+#menuContent {
+    background-color: white;
 }

@@ -1,4 +1,4 @@
-export default function preLoad() {
+export default function preLoadPage() {
     const page = document.getElementById('page');
 
     // Inside page
