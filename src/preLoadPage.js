@@ -73,4 +73,4 @@ export default function preLoadPage() {
     returnToTop.textContent = 'Return to Top';
 
     footer.appendChild(returnToTop);
-}
+};

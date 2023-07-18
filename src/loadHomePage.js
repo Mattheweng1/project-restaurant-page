@@ -290,15 +290,4 @@ export default function loadHomePage() {
     C1_right2.appendChild(C1R2_heading);
     C1_right2.appendChild(C1R2_paragraph);
     C1_right2.appendChild(C1R2_btn);
-
-    // Inside page/body/homeContent/content2
-
-    /* // Inside page/footer
-
-    const returnToTop = document.createElement('div');
-    returnToTop.setAttribute('id', 'returnToTop');
-
-    returnToTop.textContent = 'Return to Top';
-
-    footer.appendChild(returnToTop); */
 };
