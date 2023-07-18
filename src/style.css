@@ -113,7 +113,7 @@
 /* For loadHomePage.js */
 
 #homeHero {
-    background: url('./images/sushi-image.jpg');
+    background-image: url('./images/sushi.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -263,7 +263,7 @@ select:focus-visible {
 }
 
 #content1>.right1 {
-    background: url('./images/meat-image.jpg');
+    background-image: url('./images/meat.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -280,56 +280,212 @@ select:focus-visible {
 }
 
 #content1>.left2>.image {
-    background: url('./images/meat-image.jpg');
+    background-image: url('./images/meat.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 8px;
+    background-size: cover;
+    background-position: center;
 }
 
 #content1>.left2>.image:nth-child(1) {
-    background: url('./images/ramen-image.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: url('./images/ramen.jpg');
 }
 
 #content1>.left2>.image:nth-child(2) {
-    background: url('./images/soba-image.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: url('./images/soba.jpg');
 }
 
 #content1>.left2>.image:nth-child(3) {
-    background: url('./images/udon-image.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: url('./images/udon.jpg');
 }
 
 #content1>.left2>.image:nth-child(4) {
-    background: url('./images/mini-ramen-image.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: url('./images/mini-ramen.jpg');
 }
 
 #content1>.left2>.image:nth-child(5) {
-    background: url('./images/tiny-ramen-image.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: url('./images/tiny-ramen.jpg');
 }
 
 #content1>.left2>.image:nth-child(6) {
-    background: url('./images/noodles-image.jpg');
-    background-size: cover;
-    background-position: center;
+    background-image: url('./images/noodles.jpg');
 }
 
 /* For loadMenuPage.js */
 
 #menuHero {
-    background: url('./images/meat-image.jpg');
+    background-image: url('./images/meat.jpg');
     background-size: cover;
     background-position: center;
+    height: 70vh;
 }
 
 #menuContent {
     background-color: white;
+}
+
+#titleBox {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#pageTitle {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#pageTitle>span {
+    color: red;
+}
+
+.menuSection {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#drinks>.title {
+    color: red;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.items>.item {
+    display: grid;
+    gap: 1rem;
+}
+
+.items>.item>.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    height: 50vh;
+}
+
+#drinksParallax {
+    background-image: url('./images/milkshakes.jpg');
+}
+
+.parallax>.box {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: red;
+    color: white;
+    width: 40rem;
+}
+
+#drinksParallax>.box {
+    justify-self: end;
+}
+
+.parallax>.box>.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.parallax>.box>.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+#apps>.title {
+    color: red;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#appsParallax {
+    background-image: url('./images/tofu.jpg');
+}
+
+#appsParallax>.box {
+    justify-self: end;
+}
+
+#sushi>.title {
+    color: red;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#sushiParallax {
+    background-image: url('./images/sushi.jpg');
+}
+
+#sushiParallax>.box {
+    justify-self: start;
+}
+
+#noodlesAndSoups>.title {
+    color: red;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#noodlesAndSoupsParallax {
+    background-image: url('./images/tiny-ramen.jpg');
+}
+
+#noodlesAndSoupsParallax>.box {
+    justify-self: start;
+}
+
+#entrees>.title {
+    color: red;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#entreesParallax {
+    background-image: url('./images/poke-bowl.jpg');
+}
+
+#entreesParallax>.box {
+    justify-self: end;
+}
+
+#desserts>.title {
+    color: red;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#dessertsParallax {
+    background-image: url('./images/taiyaki.jpg');
+}
+
+#dessertsParallax>.box {
+    justify-self: end;
+}
+
+#bottomMessageSlogan {
+    text-align: center;
+    font-size: 4rem;
+    color: red;
+}
+
+#bottomMessage {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
 }
