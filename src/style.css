@@ -110,6 +110,10 @@
     padding: 0.5rem;
 }
 
+#returnToTop:hover {
+    cursor: pointer;
+}
+
 /* For loadHomePage.js */
 
 #homeHero {

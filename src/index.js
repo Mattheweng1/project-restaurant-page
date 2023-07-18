@@ -14,6 +14,7 @@ import loadMenuPage from './loadMenuPage.js';
     const menuTab = document.getElementById('menuTab');
     const contactTab = document.getElementById('contactTab');
     const body = document.getElementById('body');
+    const returnToTop = document.getElementById('returnToTop');
 
     // Add event listeners to tabs
 
@@ -27,16 +28,30 @@ import loadMenuPage from './loadMenuPage.js';
 
     homeTab.addEventListener('click', () => {
         deleteChildren(body);
+        window.scrollTo({
+            top: 0
+        });
         loadHomePage();
     });
     menuTab.addEventListener('click', () => {
         deleteChildren(body);
+        window.scrollTo({
+            top: 0
+        });
         loadMenuPage();
     });
     contactTab.addEventListener('click', () => {
         deleteChildren(body);
+        window.scrollTo({
+            top: 0
+        });
         loadContactPage();
     });
 
-    
+    returnToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 })();
