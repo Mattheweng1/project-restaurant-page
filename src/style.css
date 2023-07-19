@@ -606,6 +606,14 @@ select:focus-visible {
     background-color: red;
     color: white;
     padding: 0.25rem;
+    transition: 0.2s;
+}
+
+#contactInquiries>span:hover {
+    cursor: pointer;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    transition: 0.2s;
 }
 
 #contactSocialMedia {
