@@ -5,6 +5,7 @@ import './style.css';
 import preLoadPage from './preLoadPage.js';
 import loadHomePage from './loadHomePage.js';
 import loadMenuPage from './loadMenuPage.js';
+import loadContactPage from './loadContactPage.js';
 
 (() => {
     preLoadPage();

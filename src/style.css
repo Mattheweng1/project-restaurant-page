@@ -493,3 +493,120 @@ select:focus-visible {
     gap: 2rem;
     padding: 2rem;
 }
+
+/* For loadContactPage.js */
+
+#contactHero {
+    background-image: url('./images/poke-bowl.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+    border-bottom: solid red 2px;
+}
+
+#contactPageTitle {
+    font-size: 5rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: black 0 0 0.5rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+}
+
+#contactPageTitle:after {
+    content: '';
+    position: absolute;
+    width: 10rem;
+    height: 3px;
+    bottom: 0;
+    background-color: red;
+}
+
+#contactContent {
+    background-color: white;
+    display: grid;
+    justify-items: center;
+    padding: 2rem 2rem 6rem;
+    gap: 2rem;
+}
+
+#contactFeedback {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+#contactFeedback>.title {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.title>span {
+    color: red;
+}
+
+#contactFeedback>.title>span {
+    padding-right: 0.5rem;
+}
+
+#contactFeedback>.title:after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    bottom: -0.5rem;
+    background-color: red;
+    display: block;
+}
+
+#contactFeedback>.text {
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+}
+
+#contactInquiries {
+    color: rgb(66, 66, 66);
+}
+
+#contactInquiries>span {
+    background-color: red;
+    color: white;
+    padding: 0.25rem;
+}
+
+#contactSocialMedia {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+#contactSocialMedia>.title {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+#contactSocialMedia>.title:after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    bottom: -0.5rem;
+    background-color: red;
+    display: block;
+}
