@@ -1,5 +1,11 @@
+import fSVG from "./icons/fSVG";
+import birdSVG from "./icons/birdSVG";
+import cameraSVG from "./icons/cameraSVG";
+import playSVG from "./icons/playSVG";
+import pSVG from "./icons/pSVG";
+
 export default function preLoadPage() {
-    const page = document.getElementById('page');
+    const page = document.querySelector('body');
 
     // Inside page
 
@@ -33,11 +39,16 @@ export default function preLoadPage() {
     enableGeodude.setAttribute('id', 'enableGeodude');
     enableGeodude.textContent = 'Please enable Geodude';
 
-    const socialIcons = document.createElement('div');
-    socialIcons.setAttribute('id', 'socialIcons');
+    const socialHeaderIcons = document.createElement('div');
+    socialHeaderIcons.classList.add('icons');
+    socialHeaderIcons.innerHTML = socialHeaderIcons.innerHTML + fSVG;
+    socialHeaderIcons.innerHTML = socialHeaderIcons.innerHTML + birdSVG;
+    socialHeaderIcons.innerHTML = socialHeaderIcons.innerHTML + cameraSVG;
+    socialHeaderIcons.innerHTML = socialHeaderIcons.innerHTML + playSVG;
+    socialHeaderIcons.innerHTML = socialHeaderIcons.innerHTML + pSVG;
 
     socialHeader.appendChild(enableGeodude);
-    socialHeader.appendChild(socialIcons);
+    socialHeader.appendChild(socialHeaderIcons);
 
     // Inside page/header/mainHeader
 

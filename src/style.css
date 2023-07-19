@@ -42,6 +42,29 @@
     font-size: 0.9rem;
 }
 
+#socialHeader>.icons {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+#socialHeader svg {
+    height: 1.5rem;
+    aspect-ratio: 1/1;
+    fill: white;
+}
+
+.icons>svg:hover {
+    cursor: pointer;
+}
+
+.fSVG {
+    transform: scale(1.5);
+}
+
 #mainHeader {
     display: grid;
     grid-template-columns: auto 1fr 1fr 1fr;
@@ -609,4 +632,18 @@ select:focus-visible {
     bottom: -0.5rem;
     background-color: red;
     display: block;
+}
+
+#contactSocialMedia>.icons {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+}
+
+#contactSocialMedia svg {
+    height: 3rem;
+    aspect-ratio: 1/1;
+    fill: rgb(66, 66, 66);
 }

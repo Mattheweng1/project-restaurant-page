@@ -1,4 +1,11 @@
+import fSVG from "./icons/fSVG";
+import birdSVG from "./icons/birdSVG";
+import cameraSVG from "./icons/cameraSVG";
+import playSVG from "./icons/playSVG";
+import pSVG from "./icons/pSVG";
+
 export default function loadContactPage() {
+
     const body = document.getElementById('body');
 
     // Inside page/body
@@ -62,7 +69,11 @@ export default function loadContactPage() {
 
     const contactSocialMediaIcons = document.createElement('div');
     contactSocialMediaIcons.classList.add('icons');
-    contactSocialMediaIcons.textContent = `Insert Icons Here`
+    contactSocialMediaIcons.innerHTML = contactSocialMediaIcons.innerHTML + fSVG;
+    contactSocialMediaIcons.innerHTML = contactSocialMediaIcons.innerHTML + birdSVG;
+    contactSocialMediaIcons.innerHTML = contactSocialMediaIcons.innerHTML + cameraSVG;
+    contactSocialMediaIcons.innerHTML = contactSocialMediaIcons.innerHTML + playSVG;
+    contactSocialMediaIcons.innerHTML = contactSocialMediaIcons.innerHTML + pSVG;
     
     contactSocialMedia.appendChild(contactSocialMediaTitle);
     contactSocialMedia.appendChild(contactSocialMediaIcons);
